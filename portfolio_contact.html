@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        body {
+            font-family: Lucida Console;
+            background: #daf7a6;
+            color: black;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background: #2c3e50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #1a252f;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            background: rgba(0, 0, 0, 0.08);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Contact Me</h1>
+    <form>
+        <label>Full Name:</label>
+        <input type="text" name="name" required>
+
+        <label>Email Address:</label>
+        <input type="email" name="email" required>
+
+        <label>Country:</label>
+        <select name="country" required>
+            <option value="">Select your country</option>
+            <option value="Jordan">Jordan</option>
+            <option value="Egypt">Egypt</option>
+            <option value="Lebnan">Lebnan</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label>Your Comments:</label>
+        <textarea name="comments" rows="5" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <footer>Thank you for reaching out!</footer>
+
+</body>
+</html>
